@@ -12,6 +12,11 @@ public class TaskAllocationInfo {
     private String edgeID;
 
     /*
+     * 边端工艺
+     */
+    private String edgeTask;
+
+    /*
     * 任务内容
     */
     private TaskInfo taskInfo;

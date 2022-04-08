@@ -5,6 +5,7 @@ import org.springframework.data.annotation.Id;
 import org.springframework.data.mongodb.core.mapping.Field;
 import org.springframework.stereotype.Component;
 
+import java.util.Date;
 import java.util.List;
 
 @Data
@@ -26,19 +27,24 @@ public class Task {
     private String name;
 
     /*
+     * 优先级
+     */
+    private String priority;
+
+    /*
      * 发布时间
      */
-    private String releaseTime;
+    private Date releaseTime;
 
     /*
      * 截止时间
      */
-    private String dueTime;
+    private Date dueTime;
 
     /*
      * 完成时间
      */
-    private String finishTime;
+    private Date finishTime;
 
     /*
     状态
